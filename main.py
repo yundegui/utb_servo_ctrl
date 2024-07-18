@@ -89,7 +89,7 @@ class ServoControllerApp(tk.Tk):
                 servo = UTB.UBT_SERVO(ser, servo_id)
                 servo.servo_do(angle, time, 0, 0)
                 # print(f"舵机ID {servo_id} 设置为角度 {angle}，持续时间 {time}")
-                print(f"{servo_name} ({angle}，{time},0,0)")
+                print(f"{servo_name}({angle},{time},0,0)")
 
         except Exception as e:
             print(f"控制舵机时发生错误: {e}")
